@@ -24,6 +24,13 @@ global srcdir CC CLOCK_GETTIME_LINK
 set gprofng $::env(GPROFNG)
 set tdir "tmpdir/gp-gmon"
 
+# 2.47's "gprofng display gmon" writes the wrong file offset into the
+# map it makes for gmon.out, so no samples or arcs land in a function
+# and this test fails on x86-64 (PR gprofng/34502, fixed after the
+# release).
+unsupported "$tdir (PR gprofng/34502)"
+return
+
 proc check_gp_gmon { a_opt } {
   global tdir gprofng
   set cmd "$gprofng display gmon -O $tdir/$a_opt.er $tdir/a.out $tdir/gmon.out"
