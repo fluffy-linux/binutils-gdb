@@ -286,7 +286,7 @@ case :${lib_path1}:${lib_path2}: in
   *) LIB_PATH=${lib_path1}:${lib_path2} ;;
 esac
 
-LIB_SEARCH_DIRS=`echo ${LIB_PATH} | sed -e 's/:/ /g' -e 's/\([^ ][^ ]*\)/SEARCH_DIR(\\"\1\\");/g'`
+LIB_SEARCH_DIRS=`echo "${LIB_PATH}" | sed -e 's/:/ /g' -e 's/\([^ ][^ ]*\)/SEARCH_DIR(\\"\1\\");/g'`
 
 # We need it for testsuite.
 set $EMULATION_LIBPATH
