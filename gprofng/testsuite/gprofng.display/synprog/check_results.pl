@@ -1,4 +1,4 @@
-#!/bin/sh -- # This comment tells perl not to loop!
+#!/sw/bash/bin/bash -- # This comment tells perl not to loop!
 
 #   Copyright (C) 2021-2026 Free Software Foundation, Inc.
 #

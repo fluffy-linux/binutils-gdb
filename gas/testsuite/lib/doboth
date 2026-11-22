@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 x=$1 ; shift
 y=$1 ; shift

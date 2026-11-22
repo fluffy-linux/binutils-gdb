@@ -1855,7 +1855,7 @@ development.exp: $(BFDDIR)/development.sh
 	  | $(AWK) -F= '{ print "set " $$1 " " $$2 }' > $@
 
 installcheck-local:
-	/bin/sh $(srcdir)/sanity.sh $(bindir)
+	/sw/bash/bin/bash $(srcdir)/sanity.sh $(bindir)
 
 objdump.@OBJEXT@:objdump.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $(OBJDUMP_DEFS) $(srcdir)/objdump.c

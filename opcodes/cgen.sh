@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # CGEN generic assembler support code.
 #
 #   Copyright (C) 2000-2026 Free Software Foundation, Inc.

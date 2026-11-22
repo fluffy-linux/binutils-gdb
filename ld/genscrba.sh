@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/sw/bash/bin/bash
 source_em()
 {
   local current_script="$em_script"

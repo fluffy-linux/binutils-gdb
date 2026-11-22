@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # A simple ranlib script, to use less disk space than a ranlib program.
 # Copyright (C) 2004-2026 Free Software Foundation, Inc.
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 ### quick sanity test for the binutils.
 ###
 # This file was written K. Richard Pixley.

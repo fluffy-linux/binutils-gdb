@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 echo "Rebuilding opcodes.s from allopcodes.S"
 cat <<EOF >opcodes.s
